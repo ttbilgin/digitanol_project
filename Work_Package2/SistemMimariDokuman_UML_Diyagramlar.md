@@ -386,8 +386,8 @@
 > - PCA ile boyut indirgeme değerlendirmesi (proje önerisinde taahhüt edilmiş)
 >
 > **d) Karşılaştırmalı Deneme İçin Veri Hazırlama:**
-> - **Yaklaşım A (Cui et al.) için:** Zaman serisi formatında veri seti hazırlama. Enerji tüketim ve emisyon zaman serileri.
-> - **Yaklaşım B (Yi et al.) için:** Proses parametre bazlı veri seti hazırlama. İş emri bazında proses parametreleri (sıcaklık, basınç, hız, süre), makine performans metrikleri, enerji tüketimi.
+> - **Yaklaşım A (Şu makaledeki model: https://github.com/ttbilgin/digitanol_project/blob/main/WorkPackage_1/2_makale1_1-s2.0-S0959652623032274-main_compressed.pdf) için:** Zaman serisi formatında veri seti hazırlama. Enerji tüketim ve emisyon zaman serileri.
+> - **Yaklaşım B (Şu makaledeki model: https://github.com/ttbilgin/digitanol_project/blob/main/WorkPackage_1/1_s40684-025-00730-3.pdf) için:** Proses parametre bazlı veri seti hazırlama. İş emri bazında proses parametreleri (sıcaklık, basınç, hız, süre), makine performans metrikleri, enerji tüketimi.
 > - Her iki veri seti arasındaki eşleştirme ve tutarlılık kontrolü.
 
 #### 4.2.3. Load (Yükleme) Katmanı

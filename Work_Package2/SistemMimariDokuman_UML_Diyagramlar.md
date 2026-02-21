@@ -208,14 +208,14 @@
 #### 3.3.1. Bileşen Diyagramı (Component Diagram)
 
 > **[NOT:]** Sistemin tüm bileşenlerini, aralarındaki bağımlılıkları ve arayüzleri gösteren UML bileşen diyagramı:
-> - FL Sunucu bileşeni: Aggregation Engine, Cluster Manager, Training Coordinator, Model Repository
-> - FL İstemci bileşeni: Local Trainer, Data Loader, Parameter Sender
-> - Veri Pipeline bileşeni: Data Extractor, Preprocessor, Feature Engineer, Emission Factor Mapper
-> - Güvenlik bileşeni: DP Module, Secure Aggregation Module
-> - Dashboard bileşeni: Report Generator, What-If Engine, Visualization Layer
-> - DigiMES arayüzleri: DB Connector, RabbitMQ Interface, DigiCON Interface
+> - FL Sunucu bileşeni: model parametrelerinin toplanması, global modelin güncellenmesi ve istemcilere dağıtılması. 
+> - FL İstemci bileşeni: tesis bazında yerel veri üzerinde model eğitimi ve güncellenmiş parametrelerin sunucuya iletilmesi.
+> - Veri Pipeline bileşeni: DigiMES veritabanından veri çekme, ön işleme, emisyon faktörü eşleştirme.
+> - Güvenlik bileşeni: gizlilik ve güvenlik katmanları (İP3'te detaylandırılacak, burada mimari yeri gösterilir).
+> - Dashboard bileşeni: raporlama ve karar destek arayüzü (İP5'te detaylandırılacak, burada mimari yeri gösterilir).
+> - DigiMES arayüzleri: veritabanı bağlantısı, RabbitMQ entegrasyonu, DigiCON veri akışı.
 >
-> Bileşenler arası provided/required interface ilişkileri gösterilmelidir.
+> Alt bileşen detayları (aggregation algoritması, eğitim koordinasyonu, parametre iletim mekanizması vb.) İP3'te framework seçimiyle birlikte kesinleşecektir. İP2'de bileşenler arası temel veri akışları ve bağımlılıklar gösterilmelidir.
 
 #### 3.3.2. Dağıtım Diyagramı (Deployment Diagram)
 

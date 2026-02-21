@@ -88,7 +88,7 @@
 > **[NOT:]** Tüm sistemin üst düzey blok diyagramını çizin. Karmaşık olmasın, 5-6 ana blok ve aralarındaki veri akışı okları yeterli:
 >
 > ```
-> [Veri Kaynakları] --> [Veri Toplama / ETL] --> [Federe Öğrenme Katmanı] --> [Tahmin Modeli] --> [Dashboard / Karar Destek]
+> [Veri Kaynakları] --> [Veri Toplama / ETL] --> [Federe Öğrenme Katmanı] --> [Tahmin Katmanı] --> [Dashboard / Karar Destek]
 >       |                                              |
 >       |                                    [Güvenlik Katmanı]
 >       |
@@ -103,7 +103,7 @@
 > - **Veri Kaynakları:** SAP MES, IoT sensörleri, enerji ölçerler. Veri tipleri ve formatları İP2'de pilot tesisle netleşecek.
 > - **Veri Toplama / Ön İşleme:** ETL pipeline, normalizasyon, eksik veri yönetimi. Pipeline detay tasarımı İP2'de yapılacak.
 > - **Federe Öğrenme:** Sunucu-istemci yapısı, model aggregation. Mimari kararlar İP2'de, geliştirme İP3'te.
-> - **Tahmin Modeli:** kümeleme + hibrit tahmin modeli. Model geliştirme İP4'te.
+> - **Tahmin Katmanı:** kümeleme + hibrit tahmin modeli. Model geliştirme İP4'te.
 > - **Güvenlik:** DP, Secure Aggregation. Detaylı tasarım İP3'te.
 > - **Dashboard / Karar Destek:** Web/mobil arayüz, what-if analizi. Geliştirme İP5'te.
 

@@ -123,33 +123,7 @@
 > - Confluence kullanımı: sayfa yapısı, şablon standardları, bilgi tabanı organizasyonu
 > - Burndown chart ve velocity tracking: nasıl raporlanacak
 
-### 5.2. İş Paketleri Özet Planı ve Zaman Çizelgesi
-
-> **[NOT:]** 6 iş paketinin özetini tablo halinde gösterin ve Gantt benzeri bir zaman çizelgesi ekleyin:
-
-> | İP | Adı | Başlangıç | Bitiş | Süre | Ara Çıktı |
-> |----|-----|-----------|-------|------|-----------|
-> | 1 | Proje Yönetimi ve İş Paketleri Takibi | 01.09.2025 | 30.11.2026 | 455 gün | Kavramsal Tasarım Dokümanı (31.10.2025) |
-> | 2 | Gereksinim Analizi ve Mimari Tasarım | 01.09.2025 | 30.11.2025 | 90 gün | Sistem Mimari Dokümanı + UML (30.11.2025) |
-> | 3 | Federe Öğrenme Altyapısının Geliştirilmesi | 01.11.2025 | 30.04.2026 | 180 gün | Entegre Test Protokol Sonuç Raporu (30.04.2026) |
-> | 4 | Karbon Ayak İzi Tahmin Modellerinin Geliştirilmesi | 01.12.2025 | 31.05.2026 | 181 gün | Hibrit Model Prototipi (31.05.2026) |
-> | 5 | Gerçek Zamanlı Veri İşleme ve Dashboard | 01.02.2026 | 31.07.2026 | 180 gün | Kullanıcı Arayüz Geliştirmeleri (31.07.2026) |
-> | 6 | Test, Entegrasyon ve Validasyon | 01.07.2026 | 30.11.2026 | 152 gün | Collabreen Final Ürün (30.11.2026) |
-
-> Gantt çubuk grafiğini de ekleyin (proje önerisindeki zaman çizelgesini temel alarak).
-
-### 5.3. İş Paketleri Arası Bağımlılıklar
-
-> **[NOT:]** Ara çıktıların hangi iş paketinden hangi iş paketine aktığını gösteren basit bir bağımlılık diyagramı çizin:
-> - İP1 (Kavramsal Tasarım) --> İP2'ye girdi
-> - İP2 (Sistem Mimari Dokümanı) --> İP3'e girdi
-> - İP3 (Protokol Sonuç Raporu) --> İP4'e girdi
-> - İP4 (Hibrit Model Prototipi) --> İP5'e girdi
-> - İP5 (Kullanıcı Arayüz) --> İP6'ya girdi
->
-> Kritik yol: İP2 -> İP3 -> İP4 -> İP5 -> İP6 (paralel çalışan paketlerin çakışma alanlarını gösterin)
-
-### 5.4. Ekip Yapısı ve Sorumluluk Matrisi (RACI)
+### 5.2. Ekip Yapısı ve Sorumluluk Matrisi (RACI)
 
 > **[NOT:]** Tüm ekip üyelerinin projedeki rollerini ve iş paketlerine dağılımını RACI matrisi ile gösterin:
 

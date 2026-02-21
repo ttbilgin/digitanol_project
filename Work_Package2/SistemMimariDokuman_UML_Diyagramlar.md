@@ -153,7 +153,7 @@
 
 ## 3. Sistem Mimarisi Tasarımı
 
-> **[NOT - Firma için:]** Bu bölüm dokümanın kalbidir ve Sermet Öztoprak'ın faaliyetinin çıktısıdır (Eyl-Kas 2025, %25 adam/ay). İP2'nin resmi ara çıktısı olan "Sistem Mimari Dokümanı + UML Diyagramları"nın ana gövdesini oluşturur. Mimari, framework'ten bağımsız ve modüler olarak tasarlanmalıdır.
+> **[NOT - Firma için:]** Bu bölüm dokümanın kalbidir ve Sermet Öztoprak'ın faaliyetinin çıktısıdır (Eyl-Kas 2025, %25 adam/ay). Mimari, framework'ten bağımsız ve modüler olarak tasarlanmalıdır.
 
 ### 3.1. Mimari Tasarım İlkeleri
 

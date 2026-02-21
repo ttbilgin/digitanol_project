@@ -183,36 +183,7 @@
 
 ---
 
-## 7. Risk Analizi ve Yönetimi
-
-> **[NOT - Firma için:]** İP1'in "risk yönetimi için risk matrix metodolojisi" taahhüdünün somut çıktısı bu bölüm olmalı.
-
-### 7.1. Risk Matrisi
-
-> **[NOT:]** Proje önerisindeki teknik belirsizlikleri risk formatına dönüştürün. Tablo halinde gösterin:
-
-> | No | Risk | Olasılık | Etki | Risk Skoru | Azaltma Stratejisi | Sorumlu | İlgili İP |
-> |----|------|----------|------|------------|-------------------|---------|-----------|
-> | R1 | FL'nin endüstriyel ölçeğe uyarlanmasında performans sorunları | Orta | Yüksek | Yüksek | Küçük ölçekli PoC ile erken doğrulama, asenkron FL alternatifi | Sermet Ö. | İP3 |
-> | R2 | Gizlilik katmanlarının model doğruluğuna olumsuz etkisi | Orta | Orta | Orta | DP epsilon parametresinin kademeli optimizasyonu | Şevval B. | İP3 |
-> | R3 | Pilot tesisten yeterli kalitede veri alınamaması | Orta | Yüksek | Yüksek | Erken veri erişim anlaşması, sentetik veri alternatifi | Feyza C. | İP2 |
-> | R4 | Heterojen veri kaynaklarının entegrasyon zorlukları | Yüksek | Orta | Yüksek | SAP MES entegrasyon deneyiminin kullanılması, OPC-UA/MQTT standartları | Sermet Ö. | İP2 |
-> | R5 | Karbon tahmin modelinin hedef doğruluğa (R²>0.85) ulaşamaması | Orta | Yüksek | Yüksek | Hibrit modelleme, ensemble yaklaşım, akademik danışman desteği | İdris C. E. | İP4 |
-> | R6 | Gerçek zamanlı işleme hedefinin (<5 sn) tutturulamaması | Düşük | Orta | Düşük | Kademeli optimizasyon, batch fallback stratejisi | Beyza D. | İP5 |
-> | R7 | Personel kaybı | Düşük | Yüksek | Orta | Bilgi paylaşımı kültürü, çapraz eğitim, dokümantasyon | M.M. Bozkır | İP1 |
-> | R8 | Pilot tesis işbirliğinde aksaklık | Düşük | Yüksek | Orta | Alternatif pilot tesis belirlenmesi, güçlü iletişim planı | M.M. Bozkır | İP2 |
-
-### 7.2. Risk İzleme ve Güncelleme Planı
-
-> **[NOT:]** Risklerin nasıl takip edileceğini belirtin:
-> - Her sprint review'da risk tablosunun gözden geçirilmesi
-> - Yeni risk tanımlama prosedürü
-> - Risk skorunun değişmesi durumunda eskalasyon süreci
-> - TÜBİTAK dönem raporlarında risk durumunun raporlanması
-
----
-
-## 8. Standartlara Uyum Özeti
+## 7. Standartlara Uyum Stratejisi
 
 > **[NOT:]** Kısa bir tablo halinde, projenin uyum sağlaması gereken standartları ve bunların hangi iş paketinde ele alınacağını gösterin:
 
@@ -228,65 +199,4 @@
 
 ---
 
-## 9. TÜBİTAK Raporlama ve Mali Yönetim Planı
 
-> **[NOT - Firma için:]** Firmanın ilk TÜBİTAK projesi olduğu için bu bölüm hem iç referans hem de hakeme "raporlama sürecini biliyoruz" mesajı verir.
-
-### 9.1. Dönemsel Raporlama Takvimi
-
-> **[NOT:]** TÜBİTAK'ın beklediği raporlama dönemlerini ve her dönemde hangi iş paketlerinin tamamlanmış/devam ediyor olacağını belirtin:
-> - I. Dönem (2025/2. yarı): İP1 devam, İP2 tamamlanmış, İP3 başlamış
-> - II. Dönem (2026/1. yarı): İP3 tamamlanmış, İP4 tamamlanmış, İP5 devam
-> - III. Dönem (2026/2. yarı): İP5 tamamlanmış, İP6 tamamlanmış, proje kapanışı
-
-### 9.2. Dönem Raporu Hazırlık Süreci
-
-> **[NOT:]** Her dönem raporu için:
-> - Teknik ilerleme raporunun nasıl hazırlanacağı (kim hazırlıyor, kim onaylıyor)
-> - Mali belgelerin toplanma ve düzenlenme süreci
-> - YMM raporu süreci
-> - Akademik danışman değerlendirmesinin rapora dahil edilmesi
-> - Hakem ziyaretine hazırlık: hangi dokümanlar, demolar ve kanıtlar sunulacak
-
-### 9.3. Harcama Takip Mekanizması
-
-> **[NOT:]** Personel giderleri, Ar-Ge test kuruluşlarına yapılan ödemeler ve diğer maliyet kalemlerinin nasıl takip edileceğini, fatura/belge arşivleme yöntemini kısaca belirtin. Dönemsel gider tablosundaki bütçe dağılımına atıfta bulunun.
-
----
-
-## 10. Sonraki Adımlar: İP2'ye Geçiş
-
-> **[NOT - Firma için:]** Bu doküman İP2'ye girdi oluşturuyor. Bu bölümde köprüyü net kurun.
-
-### 10.1. İP2'de Yapılacak Çalışmaların Özeti
-
-> **[NOT:]** İP2 faaliyetlerini ve bu kavramsal tasarımdan nasıl besleneceklerini kısaca belirtin:
-> - Kullanıcı Gereksinimlerinin Toplanması: Pilot tesis stratejisi (Bölüm 6) temel alınacak
-> - FL İçin Sistem Mimarisi Tasarımı: Kavramsal mimari (Bölüm 4) detaylandırılacak, UML diyagramları üretilecek
-> - Veri Pipeline Tasarımı: Yöntem ana hatları (Bölüm 3) temelinde ETL detay tasarımı yapılacak
-> - Testler: Başarı ölçütleri (Bölüm 3.3) doğrultusunda test senaryoları oluşturulacak
-
-### 10.2. Açık Kalan Konular
-
-> **[NOT:]** Kavramsal aşamada henüz kesinleşmemiş konuları dürüstçe listeleyin. Bu hakemde güven oluşturur:
-> - FL framework kesin seçimi (İP2'de PoC ile netleşecek)
-> - Haberleşme protokolü kesin seçimi (İP2'de değerlendirilecek)
-> - SARIMA parametre kalibrasyonu (pilot verisi ile İP4'te belirlenecek)
-> - Pilot tesisteki veri erişim kapsamı (İP2'de tesis ziyaretiyle netleşecek)
-> - Asenkron vs. senkron FL performans karşılaştırması (İP3'te yapılacak)
-
----
-
-## Ekler
-
-### Ek A: Kısaltmalar ve Terimler Sözlüğü
-
-> **[NOT:]** FL, SARIMA, Bi-LSTM, DP, ETL, MES, IoT, OEE, gRPC, MQTT, KVKK, GDPR, GHG, SKDM, QFD, CPM, RACI vb.
-
-### Ek B: Proje Zaman Çizelgesi (Gantt Grafiği)
-
-> **[NOT:]** Proje önerisindeki iş zaman çubuk grafiğinin güncel ve detaylı versiyonu.
-
-### Ek C: Kavramsal Mimari Diyagramı (Büyük Boy)
-
-> **[NOT:]** Bölüm 4.1'deki üst düzey mimari diyagramın büyük boyutlu versiyonu.

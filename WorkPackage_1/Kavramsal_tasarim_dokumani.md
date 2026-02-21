@@ -140,15 +140,7 @@
 >
 > Her ekip üyesinin adam/ay oranlarını ve hangi aylarda hangi iş paketinde aktif olduğunu gösteren bir personel yük dağılımı tablosu da ekleyin.
 
-### 5.5. Akademik Danışmanlık Planı
-
-> **[NOT:]** Prof. Dr. Turgay Tugay Bilgin ile işbirliği yapısını tanımlayın:
-> - Danışmanlık kapsamı: yapay zeka konularında akademik yönlendirme, TÜBİTAK dokümanlarının akademik değerlendirmesi, personellerin yönlendirilmesi
-> - Toplantı sıklığı ve formatı (aylık/sprint bazlı, yüz yüze/online)
-> - Kritik karar noktalarında akademik danışman onayı gerektiren konular (model seçimi, yöntem değişikliği vb.)
-> - Bursa Teknik Üniversitesi Bilgisayar Mühendisliği Bölümü ile işbirliği kapsamı
-
-### 5.6. Dokümantasyon ve Versiyon Yönetimi
+### 5.3. Dokümantasyon ve Versiyon Yönetimi
 
 > **[NOT:]** ISO 9001 ve ISO/IEC 27001 uyumlu dokümantasyon süreçlerini tanımlayın:
 > - Doküman şablonları: her iş paketi çıktısı için standart şablonlar
@@ -157,7 +149,7 @@
 > - Confluence sayfa yapısı ve bilgi tabanı organizasyonu
 > - Kod versiyonlama: Git branching stratejisi (GitFlow veya trunk-based)
 
-### 5.7. İletişim Planı
+### 5.4. İletişim Planı
 
 > **[NOT:]** Proje içi ve dışı iletişim yapısını belirleyin:
 > - Ekip içi: daily standup, sprint toplantıları, Slack/Teams kanalları

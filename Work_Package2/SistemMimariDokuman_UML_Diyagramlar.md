@@ -160,7 +160,6 @@
 > **[NOT:]** Mimari kararları yönlendiren temel ilkeleri belirtin:
 > - **Framework bağımsızlığı:** Mimari, FL framework seçiminden (TFF, Flower vb.) bağımsız olarak tasarlanmıştır. Modüler yapı sayesinde İP3'te yapılacak framework seçimine kolayca uyarlanabilir.
 > - **DigiMES uyumluluğu:** Mimari, mevcut DigiMES Solutions altyapısı üzerine inşa edilir; mevcut bileşenlere müdahale minimize edilir.
-> - **Karşılaştırmalı deneme desteği:** İP1'de belirlenen çift yaklaşım stratejisine (Cui et al. vs Yi et al.) uygun olarak, mimari hem SARIMA tabanlı kümeleme hem de non-IID uyumlu aggregation yaklaşımlarını destekleyecek esneklikte tasarlanmıştır.
 > - **Ölçeklenebilirlik:** Pilot tesisten çoklu tesis yapısına geçişi destekleyen mimari.
 > - **Güvenlik önceliği:** Gizlilik katmanlarının (DP, Secure Aggregation) sonradan eklenmesine uygun tasarım.
 

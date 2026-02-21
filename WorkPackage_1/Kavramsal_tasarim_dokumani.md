@@ -52,9 +52,9 @@
 
 > **[NOT:]** Her bileşeni 2-3 cümleyle özetleyin. Detaya girmeyin, sadece "ne yapılacak ve neden" sorusuna cevap verin:
 
-> **a) SARIMA Tabanlı Kümeleme:** Farklı üretim tesislerinin/hatlarının enerji tüketim ve emisyon profillerinin zaman serisi karakteristiklerine göre kümelenmesi. Benzer profildeki tesisler aynı FL kümesinde eğitilerek model doğruluğu artırılacaktır. Parametre belirleme stratejisi İP4'te detaylandırılacaktır.
+> **a) Kümeleme:** Farklı üretim tesislerinin/hatlarının enerji tüketim ve emisyon profillerinin zaman serisi karakteristiklerine göre kümelenmesi. Benzer profildeki tesisler aynı FL kümesinde eğitilerek model doğruluğu artırılacaktır. Parametre belirleme stratejisi İP4'te detaylandırılacaktır.
 
-> **b) Bi-LSTM / Hibrit Tahmin Modeli:** Zaman serisi tabanlı karbon emisyon tahmini için derin öğrenme yaklaşımı. XGBoost/Random Forest ile ensemble yapısı değerlendirilecektir. Model mimarisi ve hiperparametre arama stratejisi İP4'te belirlenecektir.
+> **b) Hibrit Tahmin Modeli:** Zaman serisi tabanlı karbon emisyon tahmini için derin öğrenme yaklaşımı. XGBoost/Random Forest ile ensemble yapısı değerlendirilecektir. Model mimarisi ve hiperparametre arama stratejisi İP4'te belirlenecektir.
 
 > **c) Federe Öğrenme Altyapısı:** Dağıtık model eğitimi için sunucu-istemci mimarisi. Senkron (FedAvg) ve asenkron (FedAsync) yaklaşımlar değerlendirilecektir. Framework seçimi ve mimari detaylar İP2 ve İP3'te kesinleşecektir.
 

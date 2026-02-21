@@ -42,7 +42,7 @@
 
 ## 2. Gereksinim Analizi Raporu
 
-> **[NOT - Firma için:]** Bu bölüm Feyza Caniklioğlu'nun faaliyetinin çıktısıdır (Eyl-Kas 2025, %25 adam/ay). Hakem burada "sahaya inilmiş, gerçek ihtiyaçlar toplanmış" kanıtı arar. Saha fotoğrafları, imzalı tutanaklar ve somut gereksinim listeleri kritiktir.
+> **[NOT - Firma için:]** Bu bölüm Feyza Caniklioğlu'nun faaliyetinin çıktısıdır (Eyl-Kas 2025, %25 adam/ay). Hakem burada "sahaya inilmiş, gerçek ihtiyaçlar toplanmış" kanıtı arar. Saha fotoğrafları ve somut gereksinim listeleri eklenebilir.
 
 ### 2.1. Pilot Tesis Gereksinimleri Toplama Süreci
 

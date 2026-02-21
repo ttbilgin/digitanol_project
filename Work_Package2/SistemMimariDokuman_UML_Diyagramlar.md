@@ -419,7 +419,7 @@
 
 ## 5. Test Sonuçları Raporu
 
-> **[NOT - Firma için:]** Bu bölüm İdris Can Ellik'in faaliyetinin çıktısıdır (Kas 2025, %30 adam/ay). Proje önerisinde 4 test grubu taahhüt edilmiştir. Her test için yapılandırılmış bir rapor formatı kullanın.
+> **[NOT - Firma için:]** Bu bölüm İdris Can Ellik'in faaliyetinin çıktısıdır (Kas 2025, %30 adam/ay). Proje önerisinde 4 test grubu taahhüt edilmiştir. 
 
 ### 5.1. Test Yaklaşımı ve Ortamı
 

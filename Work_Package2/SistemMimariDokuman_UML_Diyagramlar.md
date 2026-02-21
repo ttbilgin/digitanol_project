@@ -37,21 +37,6 @@
 
 > **[NOT:]** Bu dokümanın İP2 (Gereksinim Analizi ve Mimari Tasarım) resmi ara çıktısı olduğunu belirtin. Girdi olarak İP1 Kavramsal Tasarım Dokümanı'nı (31.10.2025) kullandığını, çıktı olarak İP3 (Federe Öğrenme Altyapısının Geliştirilmesi) için temel oluşturduğunu açıklayın.
 >
-> Dokümanın kapsamı İP2'nin 4 faaliyetini yansıtmaktadır:
-> - Bölüm 2: Kullanıcı Gereksinimlerinin Toplanması (Feyza Caniklioğlu)
-> - Bölüm 3: Federe Öğrenme Altyapısı İçin Sistem Mimarisi Tasarımı (Sermet Öztoprak)
-> - Bölüm 4: Veri Toplama ve Ön İşleme Pipeline Tasarımı (Şevval Bengül)
-> - Bölüm 5: Testlerin Gerçeklenmesi (İdris Can Ellik)
-
-### 1.2. Referans Dokümanlar
-
-> **[NOT:]** Kısa bir liste:
-> - İP1 Kavramsal Tasarım Dokümanı v1.0 (31.10.2025)
-> - TÜBİTAK 1507 Proje Öneri Dokümanı
-> - Cui, T. et al. (2023), Journal of Cleaner Production, 426.
-> - Yi, Q. et al. (2025), Int. J. of Precision Engineering and Manufacturing-Green Technology, 12(5).
-> - DigiMES Solutions: Overview & Functional Specification, Digitanol, 2025.
-> - ISO 14064, GHG Protocol, ISO/IEC 27001
 
 ---
 

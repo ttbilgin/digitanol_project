@@ -53,13 +53,6 @@
 > - DigiMES Solutions: Overview & Functional Specification, Digitanol, 2025.
 > - ISO 14064, GHG Protocol, ISO/IEC 27001
 
-### 1.3. Kapsam Dışı Konular
-
-> **[NOT:]** Dokümanın neyi kapsamadığını açıkça belirtin. Bu, hakeme sınırların bilinçli çizildiğini gösterir:
-> - FL framework kesin seçimi (TensorFlow Federated / Flower / diğerleri): İP3'ün başlangıcında kesinleşecektir. İP2'de mimari, framework'ten bağımsız ve modüler olarak tasarlanmıştır.
-> - Model hiperparametre seçimi ve eğitim detayları: İP4 kapsamında ele alınacaktır.
-> - Dashboard ve karar destek arayüz tasarımı: İP5 kapsamında ele alınacaktır.
-
 ---
 
 ## 2. Gereksinim Analizi Raporu
@@ -77,15 +70,8 @@
 > - Toplantı tutanakları özeti (tam tutanaklar Ek A'da)
 > - Saha fotoğrafları (üretim hattı, mevcut ölçüm cihazları, kontrol odası)
 >
-> **Önemli:** Her görüşme tutanağı tarihli ve her iki tarafça imzalı olmalıdır.
 
-#### 2.1.2. Anket ve Gözlem Sonuçları
 
-> **[NOT:]** Proje önerisinde taahhüt edilen gereksinim mühendisliği tekniklerinin sonuçlarını raporlayın:
-> - Uygulanan anketlerin özeti ve sonuçları
-> - Saha gözlemi bulguları: mevcut veri toplama altyapısı, makine parkı, enerji ölçüm noktaları
-> - Mevcut karbon takip yöntemi (varsa) ve eksiklikleri
-> - Kullanıcı beklentileri: hangi raporları görmek istiyorlar, hangi karar destek ihtiyaçları var
 
 ### 2.2. DigiMES Entegrasyon Gereksinimleri
 
@@ -312,19 +298,6 @@
 
 > **[NOT:]** FL mimarisinin topolojik kararını ve gerekçesini detaylı açıklayın:
 
-#### 3.5.1. Topoloji Seçimi ve Gerekçesi
-
-> **[NOT:]** Değerlendirilen alternatifler ve seçim gerekçesi:
-> - **Yıldız topoloji (Star):** Tüm istemciler tek bir merkezi sunucuya bağlanır. Basit, yönetimi kolay. Pilot aşama için uygun.
-> - **Hiyerarşik topoloji:** Bölgesel aggregation sunucuları + merkezi sunucu. Ölçeklenebilir ama karmaşık.
-> - **Peer-to-peer:** Merkezsiz. Yüksek esneklik ama koordinasyon zorluğu.
->
-> Seçim: [Gerekçeli karar]
->
-> İP1'deki karşılaştırmalı deneme planına uygunluk: seçilen topolojinin hem SARIMA kümeleme yaklaşımını (kümeler arası ayrı aggregation) hem de non-IID uyumlu tek küme aggregation'ını desteklemesi gerektiğini vurgulayın.
-
-#### 3.5.2. İstemci Yönetim Stratejisi
-
 > **[NOT:]** İstemcilerin sisteme dahil olma/ayrılma senaryoları:
 > - Yeni tesis ekleme prosedürü
 > - İstemci çevrimdışı olduğunda davranış (asenkron güncelleme desteği)
@@ -549,75 +522,3 @@
 
 ---
 
-## 6. İP3'e Geçiş ve Açık Konular
-
-### 6.1. Kesinleşen Mimari Kararlar Özeti
-
-> **[NOT:]** İP2 sonucunda kesinleşen kararları listeleyerek İP3 ekibine net bir başlangıç noktası verin:
-> - Haberleşme protokolü seçimi: [Seçilen] ve gerekçesi
-> - FL sunucu-istemci topolojisi: [Seçilen] ve gerekçesi
-> - DigiMES entegrasyon yöntemi: [DB erişim stratejisi, RabbitMQ vs Kafka kararı]
-> - ETL pipeline mimarisi: [Kesinleşen tasarım]
-> - Senkron/asenkron mimari desteği: Her iki yaklaşımı destekleyen abstraction layer tasarımı kesinleşmiştir
-
-### 6.2. İP3'te Kesinleşecek Kararlar
-
-> **[NOT:]** İP2'de bilinçli olarak açık bırakılan ve İP3'te deneylerle kesinleşecek konuları listeleyin:
-> - FL framework kesin seçimi (TFF vs Flower vs diğerleri): İP3'ün ilk sprintlerinde PoC ile belirlenecek
-> - Aggregation algoritması seçimi: FedAvg vs Fed-I-AMP vs diğerleri (İP3 karşılaştırmalı deneme)
-> - DP epsilon parametresi ve Secure Aggregation protokolü detayları (İP3 güvenlik modülü)
-
-### 6.3. İP4'e Aktarılan Bilgiler
-
-> **[NOT:]** İP4 (Karbon Ayak İzi Tahmin Modelleri) için hazırlanan girdileri belirtin:
-> - Veri pipeline tasarımı ve özellik mühendisliği stratejisi (Bölüm 4)
-> - Karşılaştırmalı deneme için hazırlanan veri setleri (Yaklaşım A ve B)
-> - Emisyon faktörü entegrasyon şeması
-> - Test sonuçlarından çıkan veri kalitesi bulguları
-
-### 6.4. Test Sonuçlarından Çıkan İyileştirme Önerileri
-
-> **[NOT:]** Bölüm 5'teki test sonuçlarından çıkan ve İP3-İP4'te ele alınması gereken konuları listeleyin:
-> - Performans darboğazları ve çözüm önerileri
-> - Veri kalitesi sorunları ve çözüm önerileri
-> - Mimari iyileştirme önerileri
-
----
-
-## Ekler
-
-### Ek A: HP Pelzer Pimsa Toplantı Tutanakları
-
-> **[NOT:]** Tarihli ve imzalı toplantı tutanakları, katılımcı listeleri, saha fotoğrafları.
-
-### Ek B: QFD Matrisi (Büyük Boy)
-
-> **[NOT:]** Bölüm 2.5'teki QFD matrisinin büyük boyutlu, okunabilir versiyonu.
-
-### Ek C: UML Diyagramları (Büyük Boy)
-
-> **[NOT:]** Bölüm 3.3'teki tüm UML diyagramlarının büyük boyutlu versiyonları:
-> - C.1: Bileşen Diyagramı
-> - C.2: Dağıtım Diyagramı
-> - C.3: Sıralama Diyagramı - FL Eğitim Döngüsü
-> - C.4: Sıralama Diyagramı - Veri Toplama Akışı
-> - C.5: Sıralama Diyagramı - Tahmin İsteği Akışı
-> - C.6: Kullanım Durumu Diyagramı
-
-### Ek D: Veri Akış Diyagramları (Büyük Boy)
-
-> **[NOT:]** Bölüm 3.4'teki DFD diyagramlarının büyük boyutlu versiyonları:
-> - D.1: DFD Level 0 (Bağlam Diyagramı)
-> - D.2: DFD Level 1 (Detay Diyagramı)
-
-### Ek E: Test Ham Verileri ve Detaylı Sonuç Tabloları
-
-> **[NOT:]** Bölüm 5'teki testlerin ham verileri, detaylı ölçüm tabloları, grafikler.
-
-### Ek F: Veri Kaynakları Detaylı Envanteri
-
-> **[NOT:]** Bölüm 4.1'deki veri envanterinin genişletilmiş versiyonu: alan adları, veri tipleri, örnek değerler, iş kuralları.
-
-### Ek G: Kısaltmalar ve Terimler Sözlüğü
-
-> **[NOT:]** FL, SARIMA, Bi-LSTM, DP, ETL, MES, IoT, OEE, gRPC, REST, MQTT, OPC-UA, Modbus, Euromap 63, KVKK, GDPR, GHG, SKDM, QFD, UML, DFD, FedAvg, Fed-I-AMP, MOCOA, non-IID, RabbitMQ, IDOC, PCA, TFF vb.

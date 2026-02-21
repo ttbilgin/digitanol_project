@@ -48,21 +48,7 @@
 
 > **[NOT - Firma için:]** Bu bölüm İP1'in "Kullanılacak Yöntemlerin Ana Hatlarının Belirlenmesi" faaliyetinin doğrudan çıktısıdır. Teknik derinliğe girmeden, projede izlenecek metodolojik yaklaşımı üst düzeyde tanımlayın. Hakem burada "ekip ne yapacağını biliyor, yol haritası net" mesajı aramalı.
 
-### 3.1. Referans Çalışma ve Uyarlama Yaklaşımı
-
-> **[NOT:]** Cui et al. (2023) makalesinin temel yaklaşımını 1 paragrafla özetleyin: SARIMA tabanlı kümeleme + federe Bi-LSTM. Ardından aşağıdaki tabloyla endüstriyel ortama uyarlama farklılıklarını ana hatlarıyla gösterin. Detaylı uyarlama analizi İP2 ve İP4'te yapılacak.
-
-> | Konu | Makaledeki Yaklaşım | Collabreen'de Öngörülen Yaklaşım |
-> |------|---------------------|----------------------------------|
-> | Veri kaynağı | Ulusal karbon istatistikleri | SAP MES, IoT sensörleri, enerji ölçerler |
-> | Veri frekansı | Yıllık/aylık | Gerçek zamanlı (dakika/saniye bazında) |
-> | İstemci tanımı | Ülke bölgeleri | Üretim tesisleri/hatları |
-> | Gizlilik | Yok | Secure Aggregation, Diferansiyel Gizlilik |
-> | Gerçek zamanlılık | Offline | Stream processing (Kafka/Spark) |
-
-> Bu tablo kavramsal düzeyde bir yol haritasıdır; kesin teknik kararlar İP2 (mimari tasarım) ve İP4 (model geliştirme) iş paketlerinde verilecektir.
-
-### 3.2. Teknik Yaklaşımın Ana Bileşenleri
+### 3.1. Teknik Yaklaşımın Ana Bileşenleri
 
 > **[NOT:]** Her bileşeni 2-3 cümleyle özetleyin. Detaya girmeyin, sadece "ne yapılacak ve neden" sorusuna cevap verin:
 
@@ -78,7 +64,7 @@
 
 > **f) Gerçek Zamanlı İşleme ve Dashboard:** Kafka/Spark Streaming tabanlı veri akışı ve karar destek mekanizması. İP5'te geliştirilecektir.
 
-### 3.3. Başarı Ölçütleri (Hedef Değerler)
+### 3.2. Başarı Ölçütleri (Hedef Değerler)
 
 > **[NOT:]** Proje önerisinde taahhüt edilen 4 başarı ölçütünü tablo halinde hatırlatın:
 

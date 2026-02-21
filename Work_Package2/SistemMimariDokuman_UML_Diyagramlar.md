@@ -71,7 +71,7 @@
 > | Bileşen tüketimleri | [tablo adı] | [tip] | [frekans] | Malzeme bazlı Scope 3 tahmini |
 > | Üretim miktarları | [tablo adı] | [tip] | [frekans] | Birim başına emisyon hesaplaması |
 >
-> Bu tablo pilot tesis ziyareti sonrasında gerçek verilerle doldurulacaktır.
+
 
 #### 2.2.2. DigiCON Sensör Veri Gereksinimleri
 

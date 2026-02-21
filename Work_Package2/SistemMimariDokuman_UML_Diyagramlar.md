@@ -33,7 +33,6 @@
 
 ## 1. Giriş
 
-### 1.1. Dokümanın Amacı ve Kapsamı
 
 > **[NOT:]** Bu dokümanın İP2 (Gereksinim Analizi ve Mimari Tasarım) resmi ara çıktısı olduğunu belirtin. Girdi olarak İP1 Kavramsal Tasarım Dokümanı'nı (31.10.2025) kullandığını, çıktı olarak İP3 (Federe Öğrenme Altyapısının Geliştirilmesi) için temel oluşturduğunu açıklayın.
 >

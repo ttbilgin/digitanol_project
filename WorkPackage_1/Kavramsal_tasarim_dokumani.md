@@ -7,7 +7,6 @@
 **Akademik Danışman:** Prof. Dr. Turgay Tugay Bilgin, Bursa Teknik Üniversitesi  
 **Versiyon:** 1.0  
 **Tarih:** [GG.AA.2025]  
-**Gizlilik:** TÜBİTAK 1507 Proje Kapsamında Gizli
 
 ---
 
@@ -28,13 +27,6 @@
 ### 1.2. Projenin Kısa Özeti
 
 > **[NOT:]** 1-2 paragrafla projenin ne yaptığını, kimin için yaptığını ve neden yaptığını özetleyin. Proje önerisinin tekrarı olmasın; daha çok "bu kavramsal tasarımla projenin yol haritasını nasıl çiziyoruz" perspektifinden yazılsın.
-
-### 1.3. Referans Dokümanlar
-
-> **[NOT:]** Kısa bir liste halinde:
-> - TÜBİTAK 1507 proje öneri dokümanı
-> - Cui, T. et al. (2023), "Federated learning with SARIMA-based clustering for carbon emission prediction", Journal of Cleaner Production, 426 (ana referans makale)
-> - ISO 14064, GHG Protocol, ISO/IEC 27001, KVKK/GDPR (uyum sağlanacak standartlar)
 
 ---
 

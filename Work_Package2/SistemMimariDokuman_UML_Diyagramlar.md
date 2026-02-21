@@ -416,6 +416,7 @@
 
 ---
 
+
 ## 5. Test Sonuçları Raporu
 
 > **[NOT - Firma için:]** Bu bölüm İdris Can Ellik'in faaliyetinin çıktısıdır (Kas 2025, %30 adam/ay). Proje önerisinde 4 test grubu taahhüt edilmiştir. Her test için yapılandırılmış bir rapor formatı kullanın.
@@ -442,19 +443,27 @@
 > | Hedefle Karşılaştırma | [Değerlendirme] |
 > | İP3'e Aktarılan Bulgular | [Varsa] |
 
-### 5.3. Test 2: Yük Testi, Gecikme Ölçümleri ve Hata Tolerans Testi
+### 5.3. Test 2: Mimari Doğrulama - İletişim ve Yük Testleri
 
 > **[NOT:]** Proje önerisinden: "FL mimarisinin ölçeklenebilirlik, güvenilirlik ve düşük gecikme performansını doğrulamak." Yapılacağı yer: Firmada.
 >
+> **Önemli not:** İP2 aşamasında tam FL altyapısı henüz kurulmamıştır; FL geliştirme İP3 kapsamındadır. Bu nedenle bu testte tam bir FL eğitim döngüsü test edilmemekte, tasarlanan mimarinin temel iletişim ve altyapı varsayımları bir PoC (Proof of Concept) ortamında doğrulanmaktadır. PoC kapsamında:
+> - Bölüm 3.6'da seçilen haberleşme protokolü (gRPC/REST/MQTT) üzerinden basit bir sunucu-istemci iletişim prototipi kurularak gecikme ve bant genişliği ölçülür.
+> - Çoklu istemci simülasyonu ile eş zamanlı bağlantı ve mesaj iletim kapasitesi test edilir.
+> - Ağ kesintisi senaryoları simüle edilerek bağlantı kopması ve yeniden bağlanma davranışı gözlemlenir.
+> - DigiMES veritabanından veri çekme ve RabbitMQ üzerinden iletim performansı ölçülür.
+>
+> Bu testler, İP3'te kurulacak FL altyapısının üzerinde çalışacağı iletişim ve altyapı katmanının yeterliliğini doğrulamayı amaçlar.
+>
 > | Alan | Detay |
 > |------|-------|
-> | Test Amacı | FL mimarisinin ölçeklenebilirlik, güvenilirlik ve düşük gecikme performansını doğrulamak |
-> | Test Senaryoları | (a) Çoklu istemci senaryoları: 5, 10, 20 istemci simülasyonu. (b) Gecikme ölçümü: parametre gönderim süresi. (c) Ağ kesintisi simülasyonu: istemci bağlantı kaybı ve yeniden bağlanma |
-> | Hedef Parametreler | Sistem gecikme süresi < 5 sn, istemci sayısı desteği > 5, uptime > %80, hata toleransı oranı |
-> | Test Ortamı | Firma içi sunucularda simülasyon ortamı |
+> | Test Amacı | Tasarlanan mimari kararlarının (protokol seçimi, topoloji, DigiMES entegrasyonu) performans varsayımlarını doğrulamak |
+> | Test Senaryoları | (a) Seçilen haberleşme protokolü ile basit sunucu-istemci mesajlaşma: 5, 10, 20 istemci simülasyonu. (b) Mesaj iletim gecikme ölçümü (round-trip time). (c) Ağ kesintisi simülasyonu: bağlantı kaybı ve yeniden bağlanma davranışı. (d) DigiMES DB'den veri çekme ve iletim performansı |
+> | Hedef Parametreler | Mesaj iletim gecikmesi < 5 sn, eş zamanlı istemci desteği > 5, bağlantı kopması sonrası yeniden bağlanma süresi, DigiMES veri çekme hızı |
+> | Test Ortamı | Firma içi sunucularda PoC/simülasyon ortamı (basit sunucu-istemci uygulaması, FL framework bağımsız) |
 > | Sonuçlar | [Test sonrasında doldurulacak] |
 > | Hedefle Karşılaştırma | [Parametre bazında tablo] |
-> | İP3'e Aktarılan Bulgular | [Darboğazlar, optimizasyon önerileri] |
+> | İP3'e Aktarılan Bulgular | Seçilen protokolün performans doğrulaması, tespit edilen darboğazlar, FL altyapısı kurulurken dikkat edilmesi gereken noktalar |
 
 ### 5.4. Test 3: Veri Bütünlüğü, Veri Kaybı/Eksiklik ve Outlier Testleri
 
@@ -470,19 +479,21 @@
 > | Hedefle Karşılaştırma | [Parametre bazında tablo] |
 > | İP3'e Aktarılan Bulgular | [Veri kalitesi bulguları, pipeline iyileştirme önerileri] |
 
-### 5.5. Test 4: End-to-End Doğrulama ve Performans Testi
+### 5.5. Test 4: End-to-End Veri Akışı Doğrulama ve Throughput Testi
 
 > **[NOT:]** Proje önerisinden: "Geliştirilen mimarinin gerçek sanayi verisi üzerinde bütünleşik çalışabilirliğini kanıtlamak." Yapılacağı yer: Yurtiçi kuruluşlarda.
 >
+> **Önemli not:** İP2 aşamasında FL modeli ve tahmin motoru henüz geliştirilmemiştir. Bu testte doğrulanan kısım, veri kaynağından (DigiMES/DigiCON) FL istemciye veri teslim noktasına kadar olan veri akış zinciridir. Amaç, tasarlanan veri pipeline'ının gerçek veya gerçeğe yakın veri ile uçtan uca çalıştığını ve hedef throughput değerlerine ulaştığını kanıtlamaktır. Model doğruluk testleri (R² > 0.85, MAE < %10) İP4 ve İP6 kapsamında gerçekleştirilecektir.
+>
 > | Alan | Detay |
 > |------|-------|
-> | Test Amacı | Tüm bileşenlerin entegre çalışabilirliğini, veri akışının uçtan uca sağlıklı olduğunu kanıtlamak |
-> | Test Senaryoları | (a) DigiMES DB'den veri çekme --> pipeline --> FL istemci'ye teslim döngüsü. (b) Throughput ölçümü: >10.000 kayıt/dk hedefi. (c) Gerçek pilot veri (veya gerçeğe yakın sentetik veri) ile tam döngü testi |
-> | Hedef Parametreler | Throughput > 10.000 kayıt/dk, gecikme < 5 sn, uçtan uca veri bütünlüğü |
-> | Test Ortamı | [Belirtiniz - mümkünse pilot tesis verisine yakın] |
+> | Test Amacı | Veri akış zincirinin (DigiMES DB --> Pipeline --> ön işleme --> emisyon faktörü eşleştirme --> FL istemci veri teslim noktası) uçtan uca çalıştığını ve hedef performansı karşıladığını kanıtlamak |
+> | Test Senaryoları | (a) DigiMES DB'den veri çekme --> pipeline --> ön işleme --> feature store yazma tam döngüsü. (b) Throughput ölçümü: > 10.000 kayıt/dk hedefi. (c) Farklı veri hacimleriyle stres testi (normal yük, pik yük). (d) Emisyon faktörü eşleştirme doğruluğu kontrolü |
+> | Hedef Parametreler | Throughput > 10.000 kayıt/dk, pipeline uçtan uca gecikme, veri bütünlüğü (kaynak-hedef kayıt eşleşmesi) |
+> | Test Ortamı | [Belirtiniz - pilot tesis verisi veya gerçeğe yakın sentetik veri ile] |
 > | Sonuçlar | [Test sonrasında doldurulacak] |
 > | Hedefle Karşılaştırma | [Parametre bazında tablo] |
-> | İP3'e Aktarılan Bulgular | [Entegrasyon bulguları, performans darboğazları, mimari iyileştirme önerileri] |
+> | İP3'e Aktarılan Bulgular | Pipeline performans bulguları, veri akış darboğazları, FL istemciye teslim edilecek veri formatı ve kalitesi doğrulaması |
 
 ### 5.6. Test Sonuçları Özet Tablosu
 
@@ -491,12 +502,13 @@
 > | Test | Hedef Parametre | Hedef Değer | Gerçekleşen | Durum (Başarılı/Kısmi/Başarısız) |
 > |------|-----------------|-------------|-------------|--------------------------------|
 > | Gereksinim doğrulama | Doğrulama oranı | [%] | [%] | [Durum] |
-> | Yük testi | İstemci sayısı desteği | > 5 | [Sonuç] | [Durum] |
-> | Yük testi | Gecikme | < 5 sn | [Sonuç] | [Durum] |
-> | Yük testi | Uptime | > %80 | [Sonuç] | [Durum] |
+> | Mimari doğrulama (PoC) | Eş zamanlı istemci desteği | > 5 | [Sonuç] | [Durum] |
+> | Mimari doğrulama (PoC) | Mesaj iletim gecikmesi | < 5 sn | [Sonuç] | [Durum] |
+> | Mimari doğrulama (PoC) | Yeniden bağlanma süresi | [hedef] | [Sonuç] | [Durum] |
 > | Veri bütünlüğü | Bütünlük oranı | > %80 | [Sonuç] | [Durum] |
 > | Veri bütünlüğü | Veri kaybı | < %2 | [Sonuç] | [Durum] |
-> | E2E doğrulama | Throughput | > 10.000 kayıt/dk | [Sonuç] | [Durum] |
+> | E2E veri akışı | Pipeline throughput | > 10.000 kayıt/dk | [Sonuç] | [Durum] |
+> | E2E veri akışı | Emisyon faktörü eşleştirme doğruluğu | [hedef] | [Sonuç] | [Durum] |
 
 ---
 

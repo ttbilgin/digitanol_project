@@ -294,7 +294,6 @@
 > | Çift yönlü iletişim | Streaming desteği | Sınırlı | Publish-subscribe |
 > | Güvenlik | TLS, token-based | TLS, OAuth | TLS, username/password |
 > | Endüstriyel uyumluluk | Orta | Yüksek (yaygın) | Yüksek (IoT standardı) |
-> | FL model parametre transferi | Çok uygun | Uygun | Orta |
 > | DigiMES uyumluluğu | [değerlendirin] | DigiMES web API mevcut | DigiCON zaten destekliyor |
 >
 > **Seçim:** [Seçilen protokol ve detaylı gerekçe]
@@ -314,8 +313,7 @@
 > | Referans çalışma uyumu | Cui et al. (FedAvg), Yi et al. (Fed-I-AMP) | Proje önerisindeki İP3 taahhüdü |
 >
 > **Mimari karar:** Mimari, hem senkron hem asenkron çalışmayı destekleyecek şekilde tasarlanmıştır. Aggregation katmanı soyutlanarak (abstraction layer), İP3'te yapılacak karşılaştırmalı denemelere kolayca uyarlanabilir bir yapı öngörülmüştür.
->
-> **Aggregation Abstraction Layer tasarımı:** Sunucu tarafında FedAvg, FedAsync, Fed-I-AMP ve potansiyel diğer algoritmaları çalıştırabilecek bir arayüz (interface) tasarımı. Bu katman sayesinde İP3'teki deneysel karşılaştırma sürecinde algoritmalar arası geçiş kolay olacaktır.
+
 
 ### 3.8. DigiMES Entegrasyon Mimari Kararları
 

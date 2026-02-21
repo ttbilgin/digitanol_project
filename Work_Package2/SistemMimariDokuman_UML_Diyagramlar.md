@@ -49,10 +49,7 @@
 #### 2.1.1. HP Pelzer Pimsa Saha Ziyareti ve Görüşmeler
 
 > **[NOT:]** Saha çalışmasının detaylarını raporlayın:
-> - Ziyaret tarihleri, katılımcı listesi (firma tarafı + HP Pelzer tarafı)
-> - Görüşme yöntemi: yarı yapılandırılmış mülakatlar, saha gözlemi, mevcut sistem inceleme
 > - Görüşülen kişilerin rolleri: üretim müdürü, enerji yöneticisi, IT/OT sorumlusu, kalite müdürü
-> - Toplantı tutanakları özeti (tam tutanaklar Ek A'da)
 > - Saha fotoğrafları (üretim hattı, mevcut ölçüm cihazları, kontrol odası)
 >
 

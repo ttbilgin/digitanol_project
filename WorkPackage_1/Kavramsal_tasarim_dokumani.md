@@ -22,7 +22,7 @@
 
 ### 1.1. Dokümanın Amacı ve Kapsamı
 
-> **[NOT:]** Bu dokümanın İP1 (Proje Yönetimi ve İş Paketleri Takibinin Yapılması) ara çıktısı olarak üretildiğini belirtin. Dokümanın amacı, projenin kavramsal çerçevesini çizmek, kullanılacak yöntemlerin ana hatlarını belirlemek ve İP2'ye (Gereksinim Analizi ve Mimari Tasarım) yol gösterici bir referans oluşturmaktır. Teknik detaylar (model hiperparametreleri, kesin mimari kararları vb.) İP2 ve sonraki iş paketlerinde ele alınacaktır. Dokümanın hedef kitlesi: TÜBİTAK hakemi/izleyicisi, proje ekibi ve akademik danışman.
+> **[NOT:]** Bu dokümanın İP1 (Proje Yönetimi ve İş Paketleri Takibinin Yapılması) ara çıktısı olarak üretildiğini belirtin. Dokümanın amacı, projenin kavramsal çerçevesini çizmek, kullanılacak yöntemlerin ana hatlarını belirlemek ve İP2'ye (Gereksinim Analizi ve Mimari Tasarım) yol gösterici bir referans oluşturmaktır. Teknik detaylar (model hiperparametreleri, kesin mimari kararları vb.) İP2 ve sonraki iş paketlerinde ele alınacaktır. 
 
 ### 1.2. Projenin Kısa Özeti
 
